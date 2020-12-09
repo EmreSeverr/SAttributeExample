@@ -10,11 +10,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SAttributes.Extensions;
 using SAttributeExample.Data;
 using Microsoft.EntityFrameworkCore;
 using SAttributeExample.Data.Repo.Abstract;
 using SAttributeExample.Data.Repo.Concrate;
+using Microsoft.AspNetCore.Http;
+using SAttributes.Extensions;
 
 namespace SAttributeExample
 {
@@ -31,6 +32,8 @@ namespace SAttributeExample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SAattributeContext>(options => options.UseMySql(Configuration["ConnectionStrings:LocalDatabase"].ToString(), o => { o.MigrationsAssembly("SAttributeExample"); }));
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.ConfigureSAttributes();
 

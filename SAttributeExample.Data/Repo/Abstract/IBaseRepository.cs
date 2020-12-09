@@ -7,6 +7,8 @@ namespace SAttributeExample.Data.Repo.Abstract
 {
     public interface IBaseRepository<Tentity> where Tentity : class
     {
+        Task<IEnumerable<Tentity>> GetAllAsync();
+
         Task AddAsync(Tentity tentity);
 
         void Update(Tentity tentity);

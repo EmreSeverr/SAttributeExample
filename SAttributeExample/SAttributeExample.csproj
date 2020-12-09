@@ -16,11 +16,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
-    <PackageReference Include="SAttribute" Version="1.0.0.4" />
+    <PackageReference Include="SAttribute" Version="1.0.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SAttributeExample.Data\SAttributeExample.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SAttributes">
+      <HintPath>..\..\SAttributes\SAttributes\bin\Debug\netcoreapp3.1\SAttributes.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 

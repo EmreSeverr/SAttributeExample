@@ -21,6 +21,12 @@ namespace SAttributeExample.Controllers
             _productRepository = productRepository;
         }
 
+        [HttpGet("Product")]
+        public async Task<IActionResult> GetAllProduct()
+        {
+            return Ok(await _productRepository.GetAllAsync().ConfigureAwait(false));
+        }
+
         [HttpPost("Product")]
         [SControllerFilter(RequirementDisabledProperties = "Id")]
         public async Task<IActionResult> AddProduct(ProductDTO productDTO)
