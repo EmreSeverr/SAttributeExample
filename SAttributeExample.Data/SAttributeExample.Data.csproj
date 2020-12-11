@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SAAttributesExample.Entitiy\SAAttributeExample.Entitiy.csproj" />
+    <ProjectReference Include="..\SAAttributesExample.Entitiy\SAttributeExample.Entitiy.csproj" />
   </ItemGroup>
 
 </Project>

@@ -21,7 +21,7 @@ namespace SAttributeExample.Controllers
             _productRepository = productRepository;
         }
 
-        [HttpGet("Product")]
+        [HttpGet]
         public async Task<IActionResult> GetAllProduct()
         {
             var product = await _productRepository.GetAllAsync().ConfigureAwait(false);

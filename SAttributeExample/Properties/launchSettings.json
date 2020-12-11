@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/Products/Product",
+      "launchUrl": "api/Products",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "SAttributeExample": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/Products/Product",
+      "launchUrl": "api/Products",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
