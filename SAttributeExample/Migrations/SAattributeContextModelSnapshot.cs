@@ -6,7 +6,7 @@ using SAttributeExample.Data;
 
 namespace SAttributeExample.Migrations
 {
-    [DbContext(typeof(SAattributeContext))]
+    [DbContext(typeof(SAttributeContext))]
     partial class SAattributeContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

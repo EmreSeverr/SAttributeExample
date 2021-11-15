@@ -10,8 +10,8 @@ namespace SAttributeExample.Data.Repo.Concrate
 {
     public class BaseRepository<Tentity> : IBaseRepository<Tentity> where Tentity : class
     {
-        private readonly SAattributeContext _sAattributeContext;
-        public BaseRepository(SAattributeContext sAattributeContext)
+        private readonly SAttributeContext _sAattributeContext;
+        public BaseRepository(SAttributeContext sAattributeContext)
         {
             _sAattributeContext = sAattributeContext;
         }

@@ -1,7 +1,4 @@
-﻿using SAAttributesExample.Entitiy;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using SAttributeExample.Entity;
 
 namespace SAttributeExample.Data.Repo.Abstract
 {

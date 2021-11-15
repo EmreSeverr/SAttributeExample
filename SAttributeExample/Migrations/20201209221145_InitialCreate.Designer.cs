@@ -7,7 +7,7 @@ using SAttributeExample.Data;
 
 namespace SAttributeExample.Migrations
 {
-    [DbContext(typeof(SAattributeContext))]
+    [DbContext(typeof(SAttributeContext))]
     [Migration("20201209221145_InitialCreate")]
     partial class InitialCreate
     {

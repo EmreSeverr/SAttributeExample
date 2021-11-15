@@ -1,11 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using SAAttributesExample.Entitiy;
+﻿using Microsoft.AspNetCore.Mvc;
 using SAttributeExample.Data.Repo.Abstract;
 using SAttributeExample.DTOs;
+using SAttributeExample.Entity;
 using SAttributes.ActionFilters;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 

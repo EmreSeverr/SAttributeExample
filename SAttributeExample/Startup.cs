@@ -31,7 +31,7 @@ namespace SAttributeExample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SAattributeContext>(options => options.UseMySql(Configuration["ConnectionStrings:LocalDatabase"].ToString(), o => { o.MigrationsAssembly("SAttributeExample"); }));
+            services.AddDbContext<SAttributeContext>(options => options.UseMySql(Configuration["ConnectionStrings:LocalDatabase"].ToString(), new MySqlServerVersion(new Version(1, 0, 0)), o => { o.MigrationsAssembly("SAttributeExample"); }));
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
